@@ -1,6 +1,5 @@
 Penis
 Eggheadednesses
-pseudo-penis
 hyperparathyroidisms
 dichlorodifluoromethanes
 xenotransplantations
@@ -14,6 +13,7 @@ whippoorwill's-boots
 over-the-top
 superminicomputers
 jack-of-all-trades
+electrocardiographically
 aka
 deities
 deity
@@ -195,3 +195,6 @@ Multiplicity
 Unsystematized
 Nonexistence
 Neuroplasticity
+Whitewashed
+Ethylenediaminetetraacetate
+Dichlorodiphenytrichloroethane
