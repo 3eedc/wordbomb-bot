@@ -9,6 +9,17 @@ is_alive = True
 solvehotkey = '1'
 exithotkey = '2'
 
+print('press 1 to solve, and press 2 to exit')
+
+while True:
+    aboveorbelow = input("is the prompt above or below the bomb\n").lower()
+    if aboveorbelow == 'above' or aboveorbelow == 'below':
+        break
+    else:
+        print("you have to say 'above' or 'below'\n")
+
+vertpos = 430 if aboveorbelow == 'above' else 730 # tells the script where the prompt is gonna be (this only works for one screen resolution oops lmfao)
+
 # ends the program
 def exit():
     global is_alive
@@ -16,8 +27,8 @@ def exit():
 
 # takes a screenshot of the prompt and returns the letters
 def read():
-    ss = pyautogui.screenshot(region=(760, 730, 100, 40))
-    #s = pyautogui.screenshot(region=(760, 430, 100, 40))
+    ss = pyautogui.screenshot(region=(760, vertpos, 100, 40)) # THIS CODE IS FOR WHEn THE TEXT IS BELOW THE BOMB
+    #ss = pyautogui.screenshot(region=(760, 430, 100, 40)) # THIS CODE IS FOR WHEN THE TEXT IS ABOVE THE BOMB
     ss.save(sspath)
     ss = cv2.imread(sspath)
     monochromess = cv2.cvtColor(ss, cv2.COLOR_BGR2GRAY)
